@@ -24,6 +24,7 @@
 
 .navbar {
     padding: 5px 0;
+    padding-bottom: 20px;
     position: fixed;
     z-index: 9999;
     width: 100%;
@@ -33,15 +34,19 @@
 
 .navbar.scrolling-active {
     background-color: white;
-    padding: 15px 0;
+    padding-bottom: 20px;
 }
 
 .navbar.scrolling-active .box-navbar .brand h1 {
-    color: white;
+    color: black;
 }
 
 .navbar.scrolling-active .box-navbar .navigation ul li a {
-    color: white;
+    color: black;
+}
+
+.navbar.scrolling-active .box-navbar .navigation ul li i {
+    color: black;
 }
 
 .navbar .box-navbar {
@@ -67,7 +72,7 @@
     transition: all 0.2s ease;
 }
 
-.navbar .box-navbar .navigation ul li:hover {
+.navbar .box-navbar .navigation ul li input:hover {
     transform: scale(1.1);
 }
 
@@ -77,19 +82,20 @@
 }
 
 .navbar .box-navbar .navigation ul li:hover a {
-    color: #8338ec;
+    color: orange;
 }
 
 .navbar .box-navbar .navigation ul li #fb  {
-    padding-left: 100px;
+    margin-left: 90px;
 }
 
 .navbar .box-navbar .navigation ul li i  {
     padding: 0;
+    cursor: pointer;
 }
 
 .navbar .box-navbar .navigation ul li i:hover  {
-    color: #8338ec;
+    color: orange;
 }
 
 .navbar .box-navbar .navigation ul li input {
@@ -99,6 +105,12 @@
     border-radius: 20px;
     font-weight: bold;
     background-color: rgb(255, 0, 0);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.navbar .box-navbar .navigation ul li input:hover {
+    background-color: black;
 }
 
 .navbar .box-navbar .navigation ul li a, i {
@@ -112,7 +124,7 @@
     min-height: 100vh;
     display: grid;
     place-items: center;
-    background:  linear-gradient(90deg, rgba(5,117,230,0.7) 19%, rgba(0,242,96,0.7) 58%), url('/images/home-bg.jpg');
+    background:  linear-gradient(90deg, rgba(5,117,230,0.7) 19%, rgba(0,242,96,0.7) 58%), url('/images/home-bg.jpg'), fixed;
     background-size: 1540px;
     background-position: center;
 }
@@ -153,6 +165,11 @@
     transition: all 0.2s ease;
 }
 
+.hero .box-hero .box:nth-child(1) button:hover {
+    background-color: rgb(255, 0, 0);
+    border: 1px solid rgb(255, 0, 0);
+}
+
 .hero .box-hero .box:nth-child(1) .btn {
     color: white;
 }
@@ -160,4 +177,10 @@
 .hero .box-hero .box:nth-child(2) iframe {
     width: 100%;
     border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: black;
+    color: white;
 }
