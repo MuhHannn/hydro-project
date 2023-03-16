@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin-inline: auto;
+    transition: all 0.3s linear;
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 80%;
+        margin-inline: auto;
+        transition: all 0.3s linear;
+    }
+}
+
+.navbar {
+    padding: 5px 0;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    transition: all 0.3s ease;
+    background-color: transparent;
+}
+
+.navbar.scrolling-active {
+    background-color: white;
+    padding: 15px 0;
+}
+
+.navbar.scrolling-active .box-navbar .brand h1 {
+    color: white;
+}
+
+.navbar.scrolling-active .box-navbar .navigation ul li a {
+    color: white;
+}
+
+.navbar .box-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.navbar .box-navbar .brand h1 {
+    font-size: 40px;
+    color: white;
+}
+
+.navbar .box-navbar .navigation ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar .box-navbar .navigation ul li {
+    list-style-type: none;
+    transition: all 0.2s ease;
+}
+
+.navbar .box-navbar .navigation ul li:hover {
+    transform: scale(1.1);
+}
+
+.navbar .box-navbar .navigation ul li a {
+    padding-right: 10px;
+    justify-content: center;
+}
+
+.navbar .box-navbar .navigation ul li:hover a {
+    color: #8338ec;
+}
+
+.navbar .box-navbar .navigation ul li #fb  {
+    padding-left: 100px;
+}
+
+.navbar .box-navbar .navigation ul li i  {
+    padding: 0;
+}
+
+.navbar .box-navbar .navigation ul li i:hover  {
+    color: #8338ec;
+}
+
+.navbar .box-navbar .navigation ul li input {
+    padding: 10px 30px 10px 30px;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: rgb(255, 0, 0);
+}
+
+.navbar .box-navbar .navigation ul li a, i {
+    text-decoration: none;
+    color: white;
+}
+
+/* hero style */
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background:  linear-gradient(90deg, rgba(5,117,230,0.7) 19%, rgba(0,242,96,0.7) 58%), url('/images/home-bg.jpg');
+    background-size: 1540px;
+    background-position: center;
+}
+
+.hero .box-hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    align-items: center;
+}
+
+.hero .box-hero .box:nth-child(1) h1 {
+    font-size: 50px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.hero .box-hero .box:nth-child(1) p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: white;
+    width: 34%;
+    float: right;
+    padding-top: 10px;
+    margin-right: 180px;
+}
+
+.hero .box-hero .box:nth-child(1) button {
+    padding: 15px 40px;
+    font-weight: bold;
+    border: 1px solid white;
+    font-size: 16px;
+    background-color: transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.hero .box-hero .box:nth-child(1) .btn {
+    color: white;
+}
+
+.hero .box-hero .box:nth-child(2) iframe {
+    width: 100%;
+    border-radius: 10px;
+}
