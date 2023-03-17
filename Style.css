@@ -1,5 +1,7 @@
+/* About Css */
+
 * {
-    width: 100%;
+    /* width: 100%; */
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -10,9 +12,9 @@
 .about {
     display: flex;
     flex-wrap: nowrap;
-    gap: 30px;
-    align-items: center;
+    gap: 50px;
     justify-content: center;
+    padding: 13% 8% 0;
 }
 
 .lorem {
@@ -60,54 +62,69 @@
 
 .lorem h2 {
     font-weight: 500;
+    margin-bottom: 10px;
 }
 
 .lorem h1 {
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 
 
 .lorem p {
-    margin-bottom: 15px
+    margin-bottom: 15px;
+    line-height: 1.8;
 }
 
 /* Statistic */
+
+.statistic {
+    width: 60%;
+}
+
 .statistic h4 {
-    display: flex;
-    flex-direction: column;
     margin-bottom: 10px;
+    font-weight: 600;
 }
 
 .statistic div {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 .statistic hr {
     padding: 1px;
     background-color: black;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .statistic .hr1 {
-    width: 50%;
+    width: 85%;
 }
 
 
 .statistic .hr2 {
-    width: 52%;
+    width: 90%;
 }
 
 
 .statistic .hr3 {
-    width: 45%;
+    width: 75%;
 }
 
 .statistic .hr4 {
-    width: 40%;
+    width: 80%;
 }
 
 /* Img - About */
+
 img {
-    width: 250px;
+    margin: -50px -100px 0 0; 
+    width: 400px;
+    align-items: start;
+}
+
+/* Responsive */
+
+@media only screen and (min-width: 375px) {
+    
 }
