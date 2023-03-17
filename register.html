@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="./CSS/register.css">
+
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+
+    <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <!-- Magnific Popup core JS file -->
+    <script src="magnific-popup/jquery.magnific-popup.js"></script>
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <title>Hydro Co</title>
+</head>
+<body>
+    <!-- link that opens popup -->
+    <a class="popup-with-form" href="#test-form">Open form</a>
+
+    <!-- form itself -->
+    <form id="test-form" class="mfp-hide white-popup-block">
+        <h1>Hydro Co</h1>
+        <fieldset style="border:0;">
+            <div class="opsi">
+                <a href="#" class="daftar">Create an account</a>
+                <a href="#" class="login">Sig In</a>
+            </div>
+            <ol class="creat">
+                <li>
+                    <label for="name"></label>
+                    <input id="name" name="name" type="text" placeholder="Name" required="">
+                </li>
+                <li>
+                    <label for="email"></label>
+                    <input id="email" name="email" type="email" placeholder="Email" required="">
+                </li>
+                <li>
+                    <label for="phone"></label>
+                    <input id="phone" name="phone" type="tel" placeholder="Telephone" required="">
+                </li>
+                <li>
+                    <label for="password"></label>
+                    <input type="password" name="password" id="pw" placeholder="Password">
+                </li>
+                <li>
+                    <input type="button" value="Submit Button">
+                </li>
+            </ol>
+            <ol class="sign">
+                <li>
+                    <label for="email"></label>
+                    <input id="email" name="email" type="email" placeholder="Email" required="">
+                </li>
+                <li>
+                    <label for="password"></label>
+                    <input type="password" name="password" id="pw" placeholder="Password">
+                </li>
+                <li>
+                    <input type="button" value="Submit Button">
+                </li>
+                <li>
+                    <a href="#">Forgot you password?</a>
+                </li>
+            </ol>
+        </fieldset>
+    </form>
+
+    <!-- Script -->
+    <script>
+        $(document).ready(function() {
+            $('.popup-with-form').magnificPopup({
+                type: 'inline',
+                preloader: false,
+                focus: '#name',
+
+                callbacks: {
+                    beforeOpen: function() {
+                        if($(window).width() < 700) {
+                            this.st.focus = false;
+                        } else {
+                            this.st.focus = '#name';
+                        }
+                    }
+                }
+            });
+
+            $(".sign").hide()
+
+            $(".daftar").click(function () {
+                $(".sign").hide()
+            })
+
+        });
+    </script>
+
+</body>
+</html>
