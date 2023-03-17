@@ -184,3 +184,48 @@
     background-color: black;
     color: white;
 }
+
+.footer .box-footer .atas {
+    padding: 50px 0;
+}
+
+.footer .box-footer .atas ul li {
+    list-style-type: none;
+    text-align: left;
+    font-size: 13px;
+}
+
+.footer .box-footer .atas p {
+    font-size: 13px;
+    padding-bottom: 25px;
+}
+
+.footer .box-footer .atas .hc p {
+    padding-top: 15px;
+    width: 95%;
+}
+
+.footer .box-footer .atas .service {
+    padding-bottom: 10px;
+}
+
+.footer .box-footer .atas .company {
+    padding-top: 10px;
+}
+
+.footer .box-footer .atas .find {
+    padding-bottom: 10px;
+}
+
+.footer .box-footer hr {
+    opacity: 0.1;
+}
+
+.footer .box-footer .bawah {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.footer .box-footer .bawah .icon i {
+    padding: 10px;
+}
