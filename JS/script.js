@@ -5,3 +5,10 @@ window.addEventListener ("scroll", () => {
     navBar.classList.toggle("scrolling-active", positionWindow);
     sideBar.classList.remove("menu-active");
 });
+
+const menuBar = document.querySelector(".ri-menu-line");
+const sideBar = document.querySelector(".navigation");
+
+menuBar.addEventListener("click", () => {
+    sideBar.classList.toggle("menu-active");
+});
