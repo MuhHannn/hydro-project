@@ -1,7 +1,6 @@
 /* About Css */
 
 * {
-    /* width: 100%; */
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -78,7 +77,7 @@
 /* Statistic */
 
 .statistic {
-    width: 60%;
+    width: 90%;
 }
 
 .statistic h4 {
@@ -118,13 +117,22 @@
 /* Img - About */
 
 img {
-    margin: -50px -100px 0 0; 
+    /* margin: -50px -100px 0 0;  */
     width: 400px;
-    align-items: start;
+    align-items: flex-end;
 }
 
 /* Responsive */
 
-@media only screen and (min-width: 375px) {
-    
+@media screen and (max-width: 700px) {
+    .about {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .statistic {
+        width: 100%;
+    }
+
 }
