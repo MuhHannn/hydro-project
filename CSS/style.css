@@ -90,7 +90,7 @@
 }
 
 .navbar .box-navbar .navigation ul li i  {
-    padding: 0;
+    padding: 20px;
     cursor: pointer;
 }
 
@@ -202,6 +202,12 @@
 
 .footer .box-footer .atas {
     padding: 50px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer .box-footer .atas tr td h2 {
+    width: 40%;
 }
 
 .footer .box-footer .atas ul li {
@@ -215,21 +221,25 @@
     padding-bottom: 25px;
 }
 
-.footer .box-footer .atas .hc p {
-    padding-top: 15px;
-    width: 95%;
-}
-
-.footer .box-footer .atas .service {
-    padding-bottom: 10px;
+.footer .box-footer .atas .hydro-co {
+    width: 50%;
 }
 
 .footer .box-footer .atas .company {
-    padding-top: 10px;
+    width: 15%;
+}
+
+.footer .box-footer .atas .service {
+    width: 15%;
 }
 
 .footer .box-footer .atas .find {
-    padding-bottom: 10px;
+    width: 20%;
+}
+
+.footer .box-footer .atas p {
+    padding-top: 15px;
+    width: 95%;
 }
 
 .footer .box-footer hr {
@@ -246,13 +256,75 @@
 }
 
 @media screen and (max-width: 990px) {
+    .navbar .box-navbar i.ri-menu-line {
+        color: black;
+        display: block;
+        cursor: pointer;
+        font-size: 28px;
+    }
+
+    .navbar {
+        background-color: white;
+    }
+
+    .navbar .box-navbar .brand h1 {
+        color: black;
+    }
+
+    .navbar .box-navbar .navigation ul {
+        background-color: white;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 0%;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        margin-top: 90px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        transition: 1s ease;
+        gap: 20px;
+        opacity: 0;
+    }
+
+    .navbar .box-navbar .navigation.menu-active ul {
+        background-color: white;
+        right: 0;
+        top: 0;
+        left: 0;
+        transition: 2s ease;
+        height: 400px;
+        opacity: 1;
+    }
+
+    .navbar .box-navbar .navigation ul li a {
+        color: black;
+    }
+
+    .navbar .box-navbar .navigation ul li a:hover {
+        color: red;
+    }
+
+    .navbar .box-navbar .navigation ul li i:hover {
+        color: red;
+    }
+
+    .navbar .box-navbar .navigation ul li #fb {
+        margin: 0;
+    }
+
+    .navbar .box-navbar .navigation ul li i {
+        color: black;
+    }
+    
     .hero {
         padding-top: 100px;
     }
 
     .hero .box-hero {
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        width: 100%;
     }
 
     .hero .box-hero .box:nth-child(1) {
@@ -294,6 +366,11 @@
 
     .hero .box-hero .box:nth-child(2) iframe {
         height: 200px;
+        width: auto;
+    }
+
+    .footer .box-footer {
+        width: 100%;
     }
 }
 
