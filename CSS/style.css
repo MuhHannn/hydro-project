@@ -277,13 +277,14 @@
         right: 0;
         top: 0;
         height: 0%;
+        color: transparent;
         left: 0;
         display: flex;
         flex-direction: column;
         margin-top: 90px;
         padding-top: 30px;
         padding-bottom: 30px;
-        transition: 1s ease;
+        transition: 0.5s ease;
         gap: 20px;
         opacity: 0;
     }
@@ -293,7 +294,6 @@
         right: 0;
         top: 0;
         left: 0;
-        transition: 2s ease;
         height: 400px;
         opacity: 1;
     }
