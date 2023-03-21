@@ -165,7 +165,7 @@ h1 {
     color: rgb(248, 0, 0);
 }
 
-.container iframe {
+.container .maps iframe {
     margin-top: 5px;
     border-radius: 150px;
     width: 300px;
@@ -175,13 +175,3 @@ h1 {
     -o-border-radius: 150px;
 }
 
-@media screen and (max-width: 375px) {
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-   
-}
