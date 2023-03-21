@@ -17,3 +17,18 @@ $(document).ready(function() {
 		}
 	});
 });
+
+const navBar = document.querySelector(".navbar");
+
+window.addEventListener ("scroll", () => {
+    const positionWindow = window.scrollY > 0;
+    navBar.classList.toggle("scrolling-active", positionWindow);
+    sideBar.classList.remove("menu-active");
+});
+
+const menuBar = document.querySelector(".ri-menu-line");
+const sideBar = document.querySelector(".navigation");
+
+menuBar.addEventListener("click", () => {
+    sideBar.classList.toggle("menu-active");
+});
